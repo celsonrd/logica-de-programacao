@@ -22,17 +22,22 @@ programa
 			}
 
 			se(n % 2 != 0) {
-				se(maior > n) {
+				se(maior < n) {
 					maior = n
 				}
 
-				se(menor < n) {
+				se(menor > n) {
 					menor = n
 				}
 
 				somatorio += n
 				contador_impar++
+			} senao {
+			
+				escreva("Entrada incorreta. Digite uma entrada correta.\n")
 			}
+			
+			
 			
 		} enquanto(contador_impar < 3)
 		
